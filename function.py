@@ -15,7 +15,7 @@ def trigger_df_job(cloud_event,environment):
         "JSONPath": "gs://bkt-dataflow-metadata-icc/bq.json",
         "javascriptTextTransformFunctionName": "transform",
         "outputTable": "prj-poc-001:cricket_dataset.icc-ranking",
-        "inputFilePattern": "gs://bkt-ranking-data/icc_ranking_to_GCP.csv",
+        "inputFilePattern": "gs://bkt-icc-ranking-data/icc_ranking_to_GCP.csv",
         "bigQueryLoadingTemporaryDirectory": "gs://bkt-dataflow-metadata-icc",
         }
     }
